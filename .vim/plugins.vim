@@ -15,6 +15,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive' 
 Plugin 'bling/vim-airline'
 Plugin 'benmills/vimux'
+Plugin 'majutsushi/tagbar'
 
 " Programming
 Plugin 'tpope/vim-rails'
