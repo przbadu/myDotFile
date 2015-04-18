@@ -23,6 +23,7 @@ That's it.
 5. All the plugins are included under .vim/plugins.vim file. To install these plugins:
 
       $ vi
+
       $ :BundleInstall
 
 With that command, Vundle will clone and install all of those plugins to your .vim/bundle/ directory:w
