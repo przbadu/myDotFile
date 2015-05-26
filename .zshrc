@@ -88,4 +88,8 @@ export PATH="/usr/local/bin:$PATH"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# android installation directory
+export ANDROID_HOME=~/bin/android-sdk
+export PATH="$PATH:$HOME/bin/android-sdk/tools"
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

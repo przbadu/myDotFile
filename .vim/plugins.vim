@@ -30,6 +30,9 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'pgr0ss/vimux-ruby-test'
 Plugin 'cloud8421/vimux-cucumber'
 
+" Vim TextMate style SnipMate
+Plugin 'msanders/snipmate.vim'
+
 " Themes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jpo/vim-railscasts-theme'

@@ -25,11 +25,6 @@ set softtabstop=2 " edit as if the tabs are 2 characters wide
 set shiftwidth=2  " number of space to use to indent and unindent
 set shiftround  " round indent to a multiple of 'shiftwidth'
 
-if has('mouse')
-  set mouse=a
-  set ttymouse=xterm2
-endif
-
 set clipboard=unnamed
 
 " faster redrawing
@@ -112,6 +107,12 @@ set laststatus=2  " show the status line all the time
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Mapping Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Open NERDTree on vim startup
+autocmd VimEnter * NERDTree
+
+" focus on main window not NERDTree
+autocmd VimEnter * wincmd p
 
 " close NERDTree after a file is open
 let g:NERDTreeQuitOnOpen=0
