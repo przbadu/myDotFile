@@ -21,5 +21,8 @@ function r() { grep "$1" ${@:2} -R . }
 #mkdir and cd
 function mkcd() { mkdir -p "$@" && cd "$_"; }
 
+# cpp alias to execute command
+alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+
 path=(/usr/local/share/zsh-completions $fpath)
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
