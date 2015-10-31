@@ -57,8 +57,14 @@ plugins=(git prz colored-mani colorize brew osx zsh-syntax-highlighting)
 
 # export PATH="/Users/przbadu/.rvm/gems/ruby-2.2.0/bin:/Users/przbadu/.rvm/gems/ruby-2.2.0@global/bin:/Users/przbadu/.rvm/rubies/ruby-2.2.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/przbadu/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/sbin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
+
+
+# configure node version manager
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
