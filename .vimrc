@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""
 " => General 
-"" """""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
 
 " load plugins from Vundle
 source ~/.vim/plugins.vim
@@ -14,6 +14,10 @@ set autoread " detect when file is changed
 " set a map leader <leader> key
 let mapleader = ','
 let g:mapleader = ','
+
+" change working directory to open directory to open buffer
+set autochdir
+
 
 set history=10000 " set history to 10000
 
@@ -45,8 +49,6 @@ set foldmethod=syntax " fold based on indent
 set foldnestmax=10  " depest fold is 10 level
 set nofoldenable  " don't fold by default
 set foldlevel=1
-
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => User Interface
@@ -142,3 +144,9 @@ let g:airline_powerline_fonts=1
 
 " tagbar plugin
 nmap <silent> <leader>d :TagbarToggle<cr>
+
+" Rspec.vim mapping
+let g:rspec_runner = "os_x_iterm2"
+map <leader>ts :call RunCurrentSpecFile()<CR>
+map <leader>ls :call RunLastSpec()<CR>
+map <leader>as :call RunAllSpec()<CR>

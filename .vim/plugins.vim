@@ -11,23 +11,21 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'tpope/vim-fugitive' 
 Plugin 'bling/vim-airline'
-Plugin 'benmills/vimux'
-Plugin 'majutsushi/tagbar'
+Plugin 'easymotion/vim-easymotion'
+"Plugin 'majutsushi/tagbar'
+" snipmate alternative for html, really cool
+Plugin 'rstacruz/sparkup'
 
 " Programming
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-bundler'
+"Plugin 'tpope/vim-bundler'
 Plugin 'slim-template/vim-slim'
-Plugin 'chriseppstein/vim-haml'
-Plugin 'thoughtbot/vim-rspec'
+"Plugin 'thoughtbot/vim-rspec'
 Plugin 'xmisao/rubyjump.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'pgr0ss/vimux-ruby-test'
 Plugin 'cloud8421/vimux-cucumber'
 
 " Vim TextMate style SnipMate
@@ -35,6 +33,5 @@ Plugin 'msanders/snipmate.vim'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'jpo/vim-railscasts-theme'
 call vundle#end()
 filetype plugin indent on                 " required 

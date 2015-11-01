@@ -24,8 +24,12 @@ _ca() { _files -W /Volumes/BACKUP/PROJECTS/ASIMISOFT/ -/; }
 compdef _cl cl
 
 # vi .zshrc file
-vzsh(){ vi ~/.zshrc; }
+vzsh(){ vim ~/.zshrc; }
 
 # vi my custom zsh plugin file
-vprz(){ vi ~/.oh-my-zsh/custom/plugins/prz/prz.plugin.zsh; }
+vprz(){ vim ~/.oh-my-zsh/custom/plugins/prz/prz.plugin.zsh; }
+mvprz(){ mvim ~/.oh-my-zsh/custom/plugins/prz/prz.plugin.zsh; }
 
+# Open learning directory in macvim
+vcl(){ mvim /Volumes/BACKUP/PROJECTS/LEARNING/twist/$1;}
+vccp(){ mvim /Volumes/BACKUP/PROJECTS/UPWORK/Buzzware/identity-server/;}
